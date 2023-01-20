@@ -8,5 +8,11 @@ public class LinkedListMain {
         linkedList1.push(56);
         linkedList1.append(89);
         linkedList1.display();
+
+        System.out.println("After pop");
+        linkedList1.pop();
+        linkedList1.display();
+
+
     }
 }

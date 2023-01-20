@@ -34,5 +34,11 @@ public class LinkedList <G> {
             tail = newNode;
         }
     }
-
+    public G pop(){
+        if(head == null)
+            return null;
+        G popData = head.data;
+        head = head.next;
+        return popData;
+    }
 }
