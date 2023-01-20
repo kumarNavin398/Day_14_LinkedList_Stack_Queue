@@ -1,8 +1,10 @@
 package com.bridgelabz.LinkedLists;
 
-public class LinkedList <G>{
+
+public class LinkedList <G> {
     Node<G> head;
     Node<G> tail;
+
     public void push(G data) {
         Node<G> newNode = new Node<>(data);
         if (head == null) {
@@ -13,6 +15,7 @@ public class LinkedList <G>{
             head = newNode;
         }
     }
+
     public void display() {
         Node<G> temp = head;
         while (temp != null) {
@@ -21,4 +24,6 @@ public class LinkedList <G>{
         }
         System.out.println();
     }
+
+
 }
