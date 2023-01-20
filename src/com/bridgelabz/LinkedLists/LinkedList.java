@@ -41,4 +41,18 @@ public class LinkedList <G> {
         head = head.next;
         return popData;
     }
+    public G popLast(){
+        if(head == null)
+            return null;
+
+        G popData = tail.data;
+        Node<G> temp = head;
+        while (temp.next != tail) {
+            temp = temp.next;
+        }
+        temp.next = null;
+        tail = temp;
+        return popData;
+    }
+
 }
