@@ -1,5 +1,6 @@
 package com.bridgelabz.LinkedLists;
 
+
 public class LinkedList <G> {
     Node<G> head;
     Node<G> tail;
@@ -54,5 +55,17 @@ public class LinkedList <G> {
         tail = temp;
         return popData;
     }
+    Node<G> search(G data){
+        if(head == null)
+            return null;
 
+        Node<G> temp = head;
+        while(temp != null){
+            if(temp.data.equals(data)) {
+                System.out.println(temp.data +" found in the linked list");
+                return temp;
+            }temp = temp.next;
+        }
+        return null;
+    }
 }
