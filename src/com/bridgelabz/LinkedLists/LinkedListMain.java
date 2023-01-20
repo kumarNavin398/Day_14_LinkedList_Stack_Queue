@@ -14,10 +14,7 @@ public class LinkedListMain {
 
         linkedList1.display();
 
-        System.out.println("After popLast");
-        linkedList1.popLast();
-
-        linkedList1.display();
+        
 
     }
 }
