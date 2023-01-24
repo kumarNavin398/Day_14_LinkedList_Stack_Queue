@@ -26,9 +26,12 @@ public class LinkedListMain {
         linkedList2.display();
 
         //uc7
+        linkedList2.append(70);
         linkedList2.search(30);
 
         //uc8
+        System.out.println();
+        System.out.println("insert 40 after 30 ");
         linkedList2.insertDataAfter(30,40);
         linkedList2.display();
     }
