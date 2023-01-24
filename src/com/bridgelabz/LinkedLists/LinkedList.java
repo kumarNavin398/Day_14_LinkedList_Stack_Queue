@@ -79,4 +79,5 @@ public class LinkedList <G> {
             newNode.next = nextNode;
         }
     }
+
 }
