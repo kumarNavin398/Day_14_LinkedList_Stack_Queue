@@ -68,4 +68,15 @@ public class LinkedList <G> {
         }
         return null;
     }
+    void insertDataAfter(G searchData, G data){
+        Node<G> searchedNode = search(searchData);
+        if(searchedNode == null){
+            System.out.println("Element not found");
+        }else{
+            Node<G> newNode = new Node(data);
+            Node<G> nextNode = searchedNode.next;
+            searchedNode.next = newNode;
+            newNode.next = nextNode;
+        }
+    }
 }
