@@ -27,5 +27,9 @@ public class LinkedListMain {
 
         //uc7
         linkedList2.search(30);
+
+        //uc8
+        linkedList2.insertDataAfter(30,40);
+        linkedList2.display();
     }
 }
